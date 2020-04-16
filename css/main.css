@@ -141,11 +141,11 @@ p {
 }
     
 img {
-    
+ width: 100%;
 }
     
 figure {
-    
+  margin: 0;  
 }
     
 address {
@@ -175,6 +175,14 @@ header {
 
 header .content-wrapper {
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,6 +257,10 @@ footer .copyright {
 /* -------------- Mobile Styles - Homepage -------------*/
 /*  Hero Area   */
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -298,6 +310,9 @@ input[type=button] {
 /* -------------- Features -------------*/
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
