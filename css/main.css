@@ -97,36 +97,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
- 
 /* General Styles */
-    
+
 html {
   font-size: 16px;
 }
-    
+
 body {
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   color: #e2e3ed;
   text-align: left;  
 }
-    
+
 ul, 
 ol {
   list-style-type: none;
 }
-    
+
 a {
   color: #e2e3ed;
   text-decoration: none;
 }
-    
+
 h2 {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 1.875em;
 }
-    
+
 h3, 
 h4 {
   font-family: 'Poppins', sans-serif;
@@ -134,26 +133,24 @@ h4 {
   font-size: 1.125em;
   margin: 20px 0;
 }
-    
+
 p {
   font-size: .875em;
   line-height: 1.285;
 }
-    
+
 img {
  width: 100%;
 }
-    
+
 figure {
   margin: 0;  
 }
-    
+
 address {
   font-style: normal;
 }
-    
 
-   
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
@@ -190,7 +187,7 @@ header figure {
 }
 
 .header-divider {
-  background: #3a3a3a;
+  background: #3a3a3a; 
   height: 1px;
   width: 100%;
   margin: 10px 0 20px 0;
@@ -242,15 +239,20 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
 footer .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 20px 0;
 }
 
@@ -282,7 +284,7 @@ aside {
   flex-flow: row wrap;
 }
 
-aside .form{
+aside .form {
   margin-top: 30px;
 }
 
@@ -334,14 +336,14 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   text-align: center;
   margin: 0;
-}
-
-.features i {
-	font-size: 3.75em;
-        margin-bottom: 40px;
 }
 
 /* -------------- Reviews -------------*/
@@ -375,17 +377,6 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
-.contact-section {
-    background-color: #2a423a;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-}
- .contact-content p {
-   margin: 0;
-}
-
 .map figure {
   width: 100%;
   height: 0; 
@@ -400,6 +391,17 @@ input[type=button] {
   position: absolute; 
   top: 0; 
   left: 0; 
+}
+
+.contact-section {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.contact-content p {
+ margin: 0;
 }
 /* ==========================================================================
    FAQ Page
@@ -429,7 +431,6 @@ input[type=button] {
 .faq-content {
   margin-bottom: 50px;
 }
-
 
 .faq-content h4 {
   line-height: 1.333;
@@ -535,12 +536,12 @@ input[type=button] {
   h2 {
     font-size: 2.25em;
     line-height: 1.333;
-}
+  }
 
 h3 {
     font-size: 1.5em;
     line-height: 1.25;
-}
+  }
 
   /* Header */
   header {
@@ -570,6 +571,10 @@ h3 {
   }
   /* Hero Area */
 
+  .hero-area {
+    min-height: 600px;
+  }
+  
   .hero-area h1 {
     font-size: 3em;
     line-height: 1;
@@ -608,6 +613,10 @@ h3 {
     width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* Reviews */
   .reviews article {
     display: flex;
@@ -622,10 +631,15 @@ h3 {
     width: 49%;
   }
 
+  .reviews article figure, 
+  .reviews article div {
+    width: 49%;
+  }
+
   .reviews h3 {
     width: 75%;
     margin: 0;
-}
+  }
   /* Footer */
   footer .content-wrapper {
     width: 65%;
@@ -650,6 +664,11 @@ h3 {
 
   footer p {
       line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between
   }
 
   footer .copyright {
@@ -739,8 +758,8 @@ h3 {
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
-}
+    width: 80%;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -783,7 +802,11 @@ h3 {
   /* ==========================================================================
   About Page
   ========================================================================== */
-.mission-content p {
+  .map figure {
+    padding-bottom: 37%
+  }
+  
+  .mission-content p {
     width: 37%;
   }
   .mission h2,
